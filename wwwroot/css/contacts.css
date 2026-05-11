@@ -1,0 +1,299 @@
+/* Стили для страницы контактов */
+
+.contacts-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 32px;
+}
+
+/* Убираем лишний отступ для секции формы */
+.contact-form-section {
+  margin-top: 0 !important;
+}
+
+/* Информация о контактах */
+.contact-info p {
+  margin-bottom: 16px;
+  margin-top: 0;
+  color: var(--text);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.contact-method {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: all 0.2s ease;
+}
+
+.contact-method:hover {
+  border-color: var(--brand);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: var(--brand);
+  border-radius: 50%;
+  color: #09102a;
+  flex-shrink: 0;
+}
+
+.contact-label {
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact-details p {
+  margin: 0 0 4px 0;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.contact-details .muted {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Социальные сети */
+.social-links h3 {
+  margin-bottom: 16px;
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.social-btn:hover {
+  background: var(--brand);
+  color: #09102a;
+  border-color: var(--brand);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+/* Форма обратной связи */
+.contact-form-section p {
+  margin-bottom: 8px;
+  margin-top: 0;
+  color: var(--text);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.contact-form-section .muted {
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.contact-form {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--panel);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: 0 0 0 2px rgba(108, 140, 255, 0.1);
+}
+
+.form-group textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+/* Стили для подсказок */
+.field-hint {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+/* Стили для ошибок */
+.input-error {
+  border-color: var(--danger) !important;
+  box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.1) !important;
+}
+
+.error-message {
+  color: var(--danger);
+  font-size: 12px;
+  margin-top: 4px;
+  min-height: 32px;
+}
+
+/* Чекбокс для согласия */
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+.checkmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  background: var(--panel);
+  position: relative;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark {
+  background: var(--brand);
+  border-color: var(--brand);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 10px;
+  border: solid #09102a;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-label input[type="checkbox"]:focus + .checkmark {
+  box-shadow: 0 0 0 2px rgba(108, 140, 255, 0.1);
+}
+
+/* Кнопки формы */
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.form-actions .btn {
+  flex: 1;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .contacts-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .contact-method {
+    padding: 16px;
+  }
+  
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .social-buttons {
+    flex-direction: column;
+  }
+  
+  .social-btn {
+    justify-content: center;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    padding: 16px;
+  }
+  
+  .contact-method {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .contact-icon {
+    align-self: center;
+  }
+}

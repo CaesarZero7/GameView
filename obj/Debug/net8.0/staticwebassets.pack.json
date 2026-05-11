@@ -1,0 +1,397 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\add-game.html",
+      "PackagePath": "staticwebassets\\add-game.html"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\auth.html",
+      "PackagePath": "staticwebassets\\auth.html"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\catalog.html",
+      "PackagePath": "staticwebassets\\catalog.html"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\contacts.html",
+      "PackagePath": "staticwebassets\\contacts.html"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\css\\add-game.css",
+      "PackagePath": "staticwebassets\\css\\add-game.css"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\css\\auth.css",
+      "PackagePath": "staticwebassets\\css\\auth.css"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\css\\catalog.css",
+      "PackagePath": "staticwebassets\\css\\catalog.css"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\css\\contacts.css",
+      "PackagePath": "staticwebassets\\css\\contacts.css"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\css\\game-page.css",
+      "PackagePath": "staticwebassets\\css\\game-page.css"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\css\\news.css",
+      "PackagePath": "staticwebassets\\css\\news.css"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\css\\reviews.css",
+      "PackagePath": "staticwebassets\\css\\reviews.css"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\baldurs-gate-3.webp",
+      "PackagePath": "staticwebassets\\images\\baldurs-gate-3.webp"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\cyberpunk2077.webp",
+      "PackagePath": "staticwebassets\\images\\cyberpunk2077.webp"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\04d285ed-0d5a-4e04-8c93-df74177d23f3.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\04d285ed-0d5a-4e04-8c93-df74177d23f3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\089dd5e1-fdef-4570-a537-e1c509f95b8c.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\089dd5e1-fdef-4570-a537-e1c509f95b8c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\0c738572-85a7-4c31-ac7a-ff94802263f0.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\0c738572-85a7-4c31-ac7a-ff94802263f0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\0f13c4f3-7860-430a-b551-39fcb3cb509d.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\0f13c4f3-7860-430a-b551-39fcb3cb509d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\106c3ef6-056c-4057-bd19-f14e32e7e29b.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\106c3ef6-056c-4057-bd19-f14e32e7e29b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\12d9dbda-83f5-47bf-a633-e022bd1c0762.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\12d9dbda-83f5-47bf-a633-e022bd1c0762.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\1466df5a-5223-4d12-b32f-272e32ccab19.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\1466df5a-5223-4d12-b32f-272e32ccab19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\18c0f849-e14d-4d6f-839b-b364d87b8297.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\18c0f849-e14d-4d6f-839b-b364d87b8297.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\1c4cc6f1-607a-4cb0-b453-4446a56b6b69.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\1c4cc6f1-607a-4cb0-b453-4446a56b6b69.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\20aea355-2d7b-48e9-9e53-dab0258ecf84.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\20aea355-2d7b-48e9-9e53-dab0258ecf84.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\2c0a74a1-486f-4478-b517-6a4dfcc7371d.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\2c0a74a1-486f-4478-b517-6a4dfcc7371d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\323c555a-1ad4-4b97-9319-ac9b74ec7951.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\323c555a-1ad4-4b97-9319-ac9b74ec7951.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\45bc2425-a7cb-4e1c-8508-74dae70ea648.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\45bc2425-a7cb-4e1c-8508-74dae70ea648.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\498f24e6-ca01-4a7a-9091-a3bf895b136c.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\498f24e6-ca01-4a7a-9091-a3bf895b136c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\4d77165f-b449-4f46-badd-c36fffddd47b.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\4d77165f-b449-4f46-badd-c36fffddd47b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\4dc94c09-4f8e-4bc9-b21e-6fd9b59a03f2.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\4dc94c09-4f8e-4bc9-b21e-6fd9b59a03f2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\4fdbd732-842b-49fd-a27b-2e9505fb0869.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\4fdbd732-842b-49fd-a27b-2e9505fb0869.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\509eb3ef-7df3-470e-8b76-6a900344f175.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\509eb3ef-7df3-470e-8b76-6a900344f175.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\5531f87d-007d-4969-a3a4-ec4acd0558a5.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\5531f87d-007d-4969-a3a4-ec4acd0558a5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\5df0b05f-6fa7-4c19-b87a-1e902a41c2f7.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\5df0b05f-6fa7-4c19-b87a-1e902a41c2f7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\62dc04da-ca0f-454c-af7b-85fa5ebbaa40.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\62dc04da-ca0f-454c-af7b-85fa5ebbaa40.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\631718f5-1420-417a-ad22-4dd24597587a.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\631718f5-1420-417a-ad22-4dd24597587a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\64bedae5-ce7a-45d1-ae1b-7a2d05b8636a.webp",
+      "PackagePath": "staticwebassets\\images\\games\\64bedae5-ce7a-45d1-ae1b-7a2d05b8636a.webp"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\66bcbabd-5a19-47d3-b584-88058603e6a3.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\66bcbabd-5a19-47d3-b584-88058603e6a3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\6e5da97c-90b7-4b49-8f6a-4b46fcd832a5.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\6e5da97c-90b7-4b49-8f6a-4b46fcd832a5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\6f8be902-0f55-498c-8d6a-02b1d7e0fbdc.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\6f8be902-0f55-498c-8d6a-02b1d7e0fbdc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\70b7a795-5be8-44fd-a49d-2a62e5c9bf1f.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\70b7a795-5be8-44fd-a49d-2a62e5c9bf1f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\7134c887-2f4d-4e32-8230-9535776b18b1.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\7134c887-2f4d-4e32-8230-9535776b18b1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\7281f6c2-94af-495b-9295-df8076a714ac.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\7281f6c2-94af-495b-9295-df8076a714ac.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\7528300e-429d-405c-9511-a2cc943cf60c.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\7528300e-429d-405c-9511-a2cc943cf60c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\8b7e0152-c6cc-4366-872c-8ae79f456559.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\8b7e0152-c6cc-4366-872c-8ae79f456559.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\8cc54f50-587f-456b-a2d7-ca1213e050f4.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\8cc54f50-587f-456b-a2d7-ca1213e050f4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\8f0ac456-d1d7-423f-9893-1f362ed3ea66.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\8f0ac456-d1d7-423f-9893-1f362ed3ea66.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\9532ceaf-4593-498f-9c5e-5be78549bbd5.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\9532ceaf-4593-498f-9c5e-5be78549bbd5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\969aa20a-f883-4b8d-8fd7-fff69e3053fa.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\969aa20a-f883-4b8d-8fd7-fff69e3053fa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\9c586447-aab9-48ef-9e14-a2abed26ddf1.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\9c586447-aab9-48ef-9e14-a2abed26ddf1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\9e219eb1-433f-465c-b107-ffa204b49bba.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\9e219eb1-433f-465c-b107-ffa204b49bba.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\a94432c7-28b9-47e5-acb0-3e1d169cc155.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\a94432c7-28b9-47e5-acb0-3e1d169cc155.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\ab8bd325-660b-4f7d-9ad9-3eba5d674bb3.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\ab8bd325-660b-4f7d-9ad9-3eba5d674bb3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\ae2da8b4-63ff-4cd2-a13d-dd81a9cf4385.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\ae2da8b4-63ff-4cd2-a13d-dd81a9cf4385.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\b15bb6db-953f-4170-850b-a3abccc68037.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\b15bb6db-953f-4170-850b-a3abccc68037.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\b2841f14-34db-40d6-ac78-5f1279bbc5d8.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\b2841f14-34db-40d6-ac78-5f1279bbc5d8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\b5905433-5edf-4f0c-96ae-f840f61676d1.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\b5905433-5edf-4f0c-96ae-f840f61676d1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\b618a9bc-7583-457f-8026-52f1b64ce09b.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\b618a9bc-7583-457f-8026-52f1b64ce09b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\b7b0dfe4-24d2-444a-b08f-a6832e827e25.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\b7b0dfe4-24d2-444a-b08f-a6832e827e25.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\b9724a0c-d24c-4935-9ad9-327ab58f3c08.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\b9724a0c-d24c-4935-9ad9-327ab58f3c08.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\b9888428-1393-4214-86d2-8d7ee5c51e4d.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\b9888428-1393-4214-86d2-8d7ee5c51e4d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\c2284f77-3fdd-4722-a4d6-f5d16890fb25.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\c2284f77-3fdd-4722-a4d6-f5d16890fb25.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\c5f91a39-b44b-4697-8d72-35bdb70548d6.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\c5f91a39-b44b-4697-8d72-35bdb70548d6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\cb28f11d-6709-4a0e-9b7e-05381d62465d.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\cb28f11d-6709-4a0e-9b7e-05381d62465d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\da59b7bc-c42d-4b48-a418-923fdc82fd6f.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\da59b7bc-c42d-4b48-a418-923fdc82fd6f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\dc4163cb-31de-481a-846d-0e3537493e1b.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\dc4163cb-31de-481a-846d-0e3537493e1b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\dec68bc2-aed6-4e95-8c97-e51a8df7aa7f.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\dec68bc2-aed6-4e95-8c97-e51a8df7aa7f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\e052c699-e3a4-4f15-896f-50f8091a86c2.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\e052c699-e3a4-4f15-896f-50f8091a86c2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\e0f8b51c-fbec-4b2e-bd3c-cc21426e6659.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\e0f8b51c-fbec-4b2e-bd3c-cc21426e6659.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\e485272e-b396-4df9-998b-5f1ea75930e7.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\e485272e-b396-4df9-998b-5f1ea75930e7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\e7d42bb0-ff4c-4c12-9aff-d6c8e2405cae.webp",
+      "PackagePath": "staticwebassets\\images\\games\\e7d42bb0-ff4c-4c12-9aff-d6c8e2405cae.webp"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\e9905f89-43ab-44f0-8d68-6489f4946f0d.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\e9905f89-43ab-44f0-8d68-6489f4946f0d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\eeaa0637-9000-495f-8999-58d7be737f7a.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\eeaa0637-9000-495f-8999-58d7be737f7a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\games\\f05b63df-9aee-489f-aba1-3e8b60fc781f.jpg",
+      "PackagePath": "staticwebassets\\images\\games\\f05b63df-9aee-489f-aba1-3e8b60fc781f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\god-of-war.webp",
+      "PackagePath": "staticwebassets\\images\\god-of-war.webp"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\witcher3.webp",
+      "PackagePath": "staticwebassets\\images\\witcher3.webp"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\witcher_3_fight.jpg",
+      "PackagePath": "staticwebassets\\images\\witcher_3_fight.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\witcher_3_landscape.jpg",
+      "PackagePath": "staticwebassets\\images\\witcher_3_landscape.jpg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\images\\witcher_3_screenshot.jpeg",
+      "PackagePath": "staticwebassets\\images\\witcher_3_screenshot.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\js\\add-game-ajax.js",
+      "PackagePath": "staticwebassets\\js\\add-game-ajax.js"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\js\\add-game.js",
+      "PackagePath": "staticwebassets\\js\\add-game.js"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\js\\auth.js",
+      "PackagePath": "staticwebassets\\js\\auth.js"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\js\\catalog-ajax.js",
+      "PackagePath": "staticwebassets\\js\\catalog-ajax.js"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\js\\catalog.js",
+      "PackagePath": "staticwebassets\\js\\catalog.js"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\js\\components.js",
+      "PackagePath": "staticwebassets\\js\\components.js"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\js\\contacts.js",
+      "PackagePath": "staticwebassets\\js\\contacts.js"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\js\\reviews.js",
+      "PackagePath": "staticwebassets\\js\\reviews.js"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\news.html",
+      "PackagePath": "staticwebassets\\news.html"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\pages\\game-baldurs-gate-3.html",
+      "PackagePath": "staticwebassets\\pages\\game-baldurs-gate-3.html"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\pages\\game-cyberpunk2077.html",
+      "PackagePath": "staticwebassets\\pages\\game-cyberpunk2077.html"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\pages\\game-god-of-war.html",
+      "PackagePath": "staticwebassets\\pages\\game-god-of-war.html"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\pages\\game-the-witcher-3.html",
+      "PackagePath": "staticwebassets\\pages\\game-the-witcher-3.html"
+    },
+    {
+      "Id": "C:\\Users\\tambo\\OneDrive\\Рабочий стол\\GameView\\GameView.Server\\wwwroot\\reviews.html",
+      "PackagePath": "staticwebassets\\reviews.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GameView.Server.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.GameView.Server.props",
+      "PackagePath": "build\\GameView.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GameView.Server.props",
+      "PackagePath": "buildMultiTargeting\\GameView.Server.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.GameView.Server.props",
+      "PackagePath": "buildTransitive\\GameView.Server.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

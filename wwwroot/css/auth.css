@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: radial-gradient(1200px 800px at 20% -10%, #1b2030 0%, #0e0f13 60%) fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px 0;
+    color: #e7e9ee;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.container{
+    background: linear-gradient(180deg, #151821 0%, #1c2130 100%);
+    border: 1px solid #2a3142;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 520px;
+    height: auto;
+}
+
+.container p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container span{
+    font-size: 12px;
+    color: #a9afc1;
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.container a{
+    color: #8aa2ff;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.container a:hover{
+    text-decoration: underline;
+}
+
+.container button{
+    background: linear-gradient(135deg, #6c8cff, #9bb3ff);
+    color: #09102a;
+    font-size: 12px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.container button:hover{
+    filter: brightness(1.08);
+    transform: translateY(-1px);
+}
+
+.container button:active{
+    transform: translateY(0);
+}
+
+.container button.hidden{
+    background: transparent;
+    border-color: #e7e9ee;
+    color: #e7e9ee;
+    width: auto;
+}
+
+.container form{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.container input{
+    background: #0f1320;
+    border: 1px solid #2a3142;
+    color: #e7e9ee;
+    margin: 8px 0;
+    padding: 12px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.container input:focus{
+    border-color: #6c8cff;
+    box-shadow: 0 0 0 2px rgba(108, 140, 255, 0.1);
+}
+
+.container input::placeholder{
+    color: #a9afc1;
+}
+
+/* ИСПРАВЛЕННЫЕ СТИЛИ ДЛЯ ФОРМ */
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Форма входа - видима изначально */
+.sign-in{
+    left: 0;
+    width: 50%;
+    opacity: 1;
+    z-index: 2;
+    transform: translateX(0);
+}
+
+/* Форма регистрации - скрыта справа */
+.sign-up{
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+    transform: translateX(100%);
+}
+
+/* Когда контейнер активен (режим регистрации) */
+.container.active .sign-in{
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.active .sign-up{
+    opacity: 1;
+    z-index: 2;
+}
+
+.social-icons{
+    margin: 10px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social-icons a{
+    border: 1px solid #2a3142;
+    border-radius: 8px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #101423;
+    color: #cfd6ff;
+    transition: all 0.2s ease;
+    margin: 0;
+}
+
+.social-icons a:hover{
+    background: #0f1524;
+    border-color: #6c8cff;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.toggle-container{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 1000;
+}
+
+.container.active .toggle-container{
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+}
+
+.toggle{
+    background: linear-gradient(to right, #6c8cff, #20c997);
+    height: 100%;
+    color: #09102a;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.container.active .toggle{
+    transform: translateX(50%);
+}
+
+.toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-left{
+    transform: translateX(-200%);
+}
+
+.container.active .toggle-left{
+    transform: translateX(0);
+}
+
+.toggle-right{
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.active .toggle-right{
+    transform: translateX(200%);
+}
+
+.toggle-panel h1{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.toggle-panel p{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    opacity: 0.9;
+}
+
+.toggle-panel button{
+    background: transparent;
+    border: 2px solid #09102a;
+    color: #09102a;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: auto;
+}
+
+.toggle-panel button:hover{
+    background: #09102a;
+    color: #6c8cff;
+    transform: translateY(-2px);
+}
+
+.toggle-panel button:active{
+    transform: translateY(0);
+}
+
+.form-container p {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* ИСПРАВЛЕНИЕ ДЛЯ ЦЕНТРИРОВАНИЯ ФОРМЫ РЕГИСТРАЦИИ */
+.form-container form {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 auto;
+}
+
+/* Обеспечиваем правильное позиционирование контента внутри форм */
+.sign-up form,
+.sign-in form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Изменено с center на stretch */
+    justify-content: center;
+    width: 100%;
+}
+
+/* Гарантируем, что кнопки будут центрированы */
+.sign-up button,
+.sign-in button {
+    align-self: stretch; /* Занимает всю доступную ширину */
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/* Исправляем позиционирование формы регистрации */
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up form {
+    transform: none; /* Убеждаемся, что нет лишних трансформаций */
+    position: relative;
+    left: 0;
+}
+
+.forgot-password {
+    align-self: flex-end;
+    margin: 5px 0 15px 0;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10000;
+    background: rgba(21, 24, 33, 0.8);
+    border: 1px solid #2a3142;
+    color: #e7e9ee;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(10px);
+  }
+  
+.back-button:hover {
+    background: rgba(42, 49, 66, 0.8);
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.input-error {
+    color: #ff6b6b;
+    font-size: 12px;
+    margin-top: 4px;
+    text-align: left;
+    width: 100%;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        min-height: 500px;
+    }
+    
+    .container form {
+        padding: 30px 20px;
+    }
+    
+    .toggle-panel {
+        padding: 0 20px;
+    }
+    
+    .toggle-panel h1 {
+        font-size: 20px;
+    }
+    
+    .toggle-panel p {
+        font-size: 12px;
+    }
+    
+    .form-container h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        min-height: 450px;
+    }
+    
+    .container form {
+        padding: 25px 15px;
+    }
+    
+    .container input {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+    
+    .container button {
+        padding: 10px 20px;
+        font-size: 11px;
+    }
+    
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .form-container h1 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .back-button {
+        top: 15px;
+        left: 15px;
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Добавить игру — GameView</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/add-game.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <site-header base=""></site-header>
+
+  <div class="container" style="padding:24px 0 36px;">
+    <main role="main" class="panel">
+      <header>
+        <h1>Добавить игру в каталог</h1>
+        <p class="muted">Заполните информацию о новой игре для добавления в каталог GameView.</p>
+      </header>
+
+      <form id="add-game-form" action="#" method="post" enctype="multipart/form-data" novalidate>
+        <!-- Основная информация -->
+        <section class="form-section" aria-labelledby="basic-info">
+          <p class="section-title" id="basic-info">Основная информация</p>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="game-title">Название игры *</label>
+              <input type="text" id="game-title" name="title" required placeholder="Введите название игры">
+              <div class="error-container">
+                <small class="hint">Буквы, цифры, пробелы и основные символы (-'’:,.!?()&+). От 2 до 100 символов.</small>
+                <span class="error-message" id="title-error"></span>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="game-developer">Разработчик *</label>
+              <input type="text" id="game-developer" name="developer" required placeholder="Название студии-разработчика">
+              <div class="error-container">
+                <small class="hint">Буквы, цифры, пробелы и основные символы (-'’:,.!?()&+). От 2 до 50 символов.</small>
+                <span class="error-message" id="developer-error"></span>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="game-publisher">Издатель</label>
+              <input type="text" id="game-publisher" name="publisher" placeholder="Название издателя">
+              <div class="error-container">
+                <small class="hint">Буквы, цифры, пробелы и основные символы (-'’:,.!?()&+). Не более 50 символов.</small>
+                <span class="error-message" id="publisher-error"></span>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label>Жанры *</label>
+              <div class="genre-checkboxes">
+                <div class="checkbox-group">
+                  <input type="checkbox" id="genre-action" name="genres[]" value="Экшен">
+                  <label for="genre-action">Экшен</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="genre-rpg" name="genres[]" value="RPG">
+                  <label for="genre-rpg">RPG</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="genre-adventure" name="genres[]" value="Приключения">
+                  <label for="genre-adventure">Приключения</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="genre-strategy" name="genres[]" value="Стратегия">
+                  <label for="genre-strategy">Стратегия</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="genre-simulation" name="genres[]" value="Симулятор">
+                  <label for="genre-simulation">Симулятор</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="genre-sports" name="genres[]" value="Спорт">
+                  <label for="genre-sports">Спорт</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="genre-racing" name="genres[]" value="Гонки">
+                  <label for="genre-racing">Гонки</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="genre-puzzle" name="genres[]" value="Головоломка">
+                  <label for="genre-puzzle">Головоломка</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="genre-horror" name="genres[]" value="Хоррор">
+                  <label for="genre-horror">Хоррор</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="genre-fighting" name="genres[]" value="Файтинг">
+                  <label for="genre-fighting">Файтинг</label>
+                </div>
+              </div>
+              <div class="error-container">
+                <small class="hint">Выберите хотя бы один жанр. Можно выбрать несколько.</small>
+                <span class="error-message" id="genres-error"></span>
+              </div>
+              <div class="selected-genres" id="selected-genres"></div>
+            </div>
+            
+            <div class="form-group">
+              <label for="game-release-date">Дата выхода *</label>
+              <div class="datepicker-container">
+                <input type="text" id="game-release-date" name="release_date" class="datepicker-input" required placeholder="Выберите дату выхода" readonly>
+                <div class="datepicker-calendar" id="datepicker-calendar">
+                  <div class="datepicker-header">
+                    <button class="datepicker-nav" id="prev-year" type="button">«</button>
+                    <button class="datepicker-nav" id="prev-month" type="button">‹</button>
+                    
+                    <div class="datepicker-month-year-select">
+                      <select id="datepicker-month" class="datepicker-select">
+                        <option value="0">Январь</option>
+                        <option value="1">Февраль</option>
+                        <option value="2">Март</option>
+                        <option value="3">Апрель</option>
+                        <option value="4">Май</option>
+                        <option value="5">Июнь</option>
+                        <option value="6">Июль</option>
+                        <option value="7">Август</option>
+                        <option value="8">Сентябрь</option>
+                        <option value="9">Октябрь</option>
+                        <option value="10">Ноябрь</option>
+                        <option value="11">Декабрь</option>
+                      </select>
+                      <select id="datepicker-year" class="datepicker-select"></select>
+                    </div>
+                    
+                    <button class="datepicker-nav" id="next-month" type="button">›</button>
+                    <button class="datepicker-nav" id="next-year" type="button">»</button>
+                  </div>
+                  <div class="datepicker-weekdays">
+                    <div class="datepicker-weekday">Пн</div>
+                    <div class="datepicker-weekday">Вт</div>
+                    <div class="datepicker-weekday">Ср</div>
+                    <div class="datepicker-weekday">Чт</div>
+                    <div class="datepicker-weekday">Пт</div>
+                    <div class="datepicker-weekday">Сб</div>
+                    <div class="datepicker-weekday">Вс</div>
+                  </div>
+                  <div class="datepicker-days" id="calendar-days"></div>
+                  <div class="datepicker-actions">
+                    <button class="datepicker-today" id="set-today" type="button">Сегодня</button>
+                    <button class="datepicker-clear" id="clear-date" type="button">Очистить</button>
+                  </div>
+                </div>
+              </div>
+              <div class="error-container">
+                <small class="hint">Формат: ДД.ММ.ГГГГ</small>
+                <span class="error-message" id="release-date-error"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="game-price">Цена (руб) *</label>
+              <input type="text" id="game-price" name="price" required placeholder="0.00">
+              <div class="error-container">
+                <small class="hint">Число с двумя знаками после запятой. Например: 1999.99</small>
+                <span class="error-message" id="price-error"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="game-rating">Рейтинг (0–10)</label>
+            <input type="number" id="game-rating" name="rating" step="0.1" min="0" max="10" placeholder="8.5">
+            <div class="error-container">
+              <small class="hint">Число от 0 до 10 с одним знаком после запятой. Например: 8.5</small>
+              <span class="error-message" id="rating-error"></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Описание -->
+        <section class="form-section" aria-labelledby="description">
+          <p class="section-title" id="description">Описание</p>
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label for="game-summary">Краткое описание *</label>
+              <textarea id="game-summary" name="summary" rows="3" required placeholder="Краткое описание игры, которое будет отображаться в карточке"></textarea>
+              <div class="error-container">
+                <small class="hint">От 10 до 40 символов. Без специальных символов.</small>
+                <span class="error-message" id="summary-error"></span>
+              </div>
+            </div>
+            
+            <div class="form-group full-width">
+              <label for="game-description">Полное описание *</label>
+              <textarea id="game-description" name="description" rows="6" required placeholder="Подробное описание игры, сюжета и особенностей"></textarea>
+              <div class="error-container">
+                <small class="hint">Минимум 70 символов. Можно использовать HTML-теги.</small>
+                <span class="error-message" id="description-error"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Платформы и режимы -->
+        <section class="form-section" aria-labelledby="platforms-modes">
+            <p class="section-title" id="platforms-modes">Платформы и режимы игры</p>
+            <div class="form-grid">
+            <div class="form-group">
+                <label>Платформы *</label>
+                <div class="platform-checkboxes">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="platform-pc" name="platforms[]" value="PC">
+                    <label for="platform-pc">PC</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="platform-ps" name="platforms[]" value="PlayStation">
+                    <label for="platform-ps">PlayStation</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="platform-xbox" name="platforms[]" value="Xbox">
+                    <label for="platform-xbox">Xbox</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="platform-nintendo" name="platforms[]" value="Nintendo">
+                    <label for="platform-nintendo">Nintendo</label>
+                </div>
+                </div>
+                <div class="error-container">
+                <small class="hint">Выберите хотя бы одну платформу.</small>
+                <span class="error-message" id="platforms-error"></span>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Режимы игры *</label>
+                <div class="mode-checkboxes">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="mode-single" name="modes[]" value="single">
+                    <label for="mode-single">Одиночная</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="mode-multi" name="modes[]" value="multiplayer">
+                    <label for="mode-multi">Многопользовательская</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="mode-coop" name="modes[]" value="cooperative">
+                    <label for="mode-coop">Кооператив</label>
+                </div>
+                </div>
+                <div class="error-container">
+                <small class="hint">Выберите хотя бы один режим игры.</small>
+                <span class="error-message" id="modes-error"></span>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <!-- Системные требования -->
+        <section class="form-section system-requirements-section" aria-labelledby="system-requirements" id="system-requirements-section" style="display: none;">
+            <p class="section-title" id="system-requirements">Системные требования (PC)</p>
+            <div class="form-grid">
+            <div class="form-group">
+                <label for="req-cpu">Процессор</label>
+                <input type="text" id="req-cpu" name="requirements[cpu]" placeholder="Минимальные требования к процессору">
+                <div class="error-container">
+                <small class="hint">Например: Intel Core i5-2500K или AMD FX-6300</small>
+                <span class="error-message" id="cpu-error"></span>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="req-ram">Оперативная память</label>
+                <input type="text" id="req-ram" name="requirements[ram]" placeholder="Минимальный объем ОЗУ">
+                <div class="error-container">
+                <small class="hint">Формат: число и единица измерения, например: 8 GB</small>
+                <span class="error-message" id="ram-error"></span>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="req-gpu">Видеокарта</label>
+                <input type="text" id="req-gpu" name="requirements[gpu]" placeholder="Минимальные требования к видеокарте">
+                <div class="error-container">
+                <small class="hint">Например: NVIDIA GeForce GTX 770 или AMD Radeon R9 280</small>
+                <span class="error-message" id="gpu-error"></span>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="req-storage">Место на диске</label>
+                <input type="text" id="req-storage" name="requirements[storage]" placeholder="Требуемое место на диске">
+                <div class="error-container">
+                <small class="hint">Формат: число и единица измерения, например: 50 GB</small>
+                <span class="error-message" id="storage-error"></span>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Медиафайлы -->
+        <section class="form-section" aria-labelledby="media">
+          <p class="section-title" id="media">Медиафайлы</p>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="game-cover">Обложка игры *</label>
+              <div class="file-input-wrapper">
+                <input type="file" id="game-cover" name="cover" accept="image/*" required>
+                <div class="file-input-label">
+                  <span>Выберите файл обложки</span>
+                </div>
+              </div>
+              <div class="error-container">
+                <small class="hint">Формат: JPG, PNG или WebP. Максимальный размер: 5MB.</small>
+                <span class="error-message" id="cover-error"></span>
+              </div>
+              <div class="image-preview" id="cover-preview"></div>
+            </div>
+            
+            <div class="form-group">
+              <label for="game-screenshots">Скриншоты *</label>
+              <div class="file-input-wrapper">
+                <input type="file" id="game-screenshots" name="screenshots[]" accept="image/*" multiple required>
+                <div class="file-input-label">
+                  <span>Выберите скриншоты (3-10 файлов)</span>
+                </div>
+              </div>
+              <div class="error-container">
+                <small class="hint">Обязательно 3-10 файлов. Формат: JPG, PNG. Максимальный размер: 5MB каждый.</small>
+                <span class="error-message" id="screenshots-error"></span>
+              </div>
+              <div class="image-preview" id="screenshots-preview"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Действия -->
+        <div class="form-actions">
+          <button type="reset" class="btn secondary">Очистить форму</button>
+          <button type="submit" class="btn">Добавить игру</button>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <site-footer base=""></site-footer>
+  <script src="js/components.js" defer></script>
+  <script src="js/add-game-ajax.js" defer></script>
+</body>
+
+</html>

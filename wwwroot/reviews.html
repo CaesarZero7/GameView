@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Обзоры сообщества — GameView</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/reviews.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <site-header base="../"></site-header>
+
+  <div class="container" style="padding:24px 0 36px;">
+    <main class="panel" role="main">
+      <header>
+        <h1>Обзоры сообщества</h1>
+        <p class="muted">Мнения игроков о проектах — честные оценки и развернутые отзывы</p>
+      </header>
+
+      <!-- Фильтры -->
+      <form class="filters" aria-label="Фильтры обзоров" action="#" method="get">
+        <label>
+          Игра
+          <select name="game">
+            <option value="">Все</option>
+            <option>The Witcher 3</option>
+            <option>Cyberpunk 2077</option>
+            <option>God of War</option>
+            <option>Baldur's Gate 3</option>
+          </select>
+        </label>
+        <label>
+          Рейтинг
+          <select name="rating">
+            <option value="">Любой</option>
+            <option>9–10</option>
+            <option>7–8</option>
+            <option>5–6</option>
+            <option>до 4</option>
+          </select>
+        </label>
+        <label>
+          Дата
+          <select name="date">
+            <option value="">За всё время</option>
+            <option>За месяц</option>
+            <option>За год</option>
+          </select>
+        </label>
+        <div class="actions">
+          <button class="btn" type="submit">Применить</button>
+          <button class="btn secondary" type="reset">Сбросить</button>
+        </div>
+      </form>
+
+      <div class="filters" aria-label="Сортировка обзоров">
+        <span class="muted">Сортировка:</span>
+        <label><input type="radio" name="sort" value="date" checked /> по дате</label>
+        <label><input type="radio" name="sort" value="rating" /> по рейтингу</label>
+        <label><input type="radio" name="sort" value="usefulness" /> по полезности</label>
+      </div>
+
+      <!-- Список обзоров -->
+      <section aria-labelledby="reviews-list" style="margin-top:20px;">
+        <p id="reviews-list" class="sr-only">Список пользовательских обзоров</p>
+        <div class="review-list">
+          <!-- Карточка обзора -->
+          <article class="review-card">
+            <header class="review-head">
+              <h2 class="review-title">The Witcher 3 — живая вселенная и сильные квесты</h2>
+              <div class="review-meta">
+                <span class="badge">The Witcher 3</span>
+                <span class="year-badge">Рейтинг: 9.0/10</span>
+                <span class="muted">от user123 · 12.09.2025</span>
+              </div>
+            </header>
+            <div class="review-content">
+              <div class="review-text-wrapper">
+                <p class="review-text">Отличная постановка, сильные сценарные арки и мир, который хочется исследовать. Технически не везде идеально, но атмосфера и квесты перекрывают.</p>
+                <button class="read-more">Читать полностью</button>
+              </div>
+              
+              <div class="review-actions">
+                <div class="vote">
+                  <button class="icon-btn" aria-label="Полезно">
+                    <i class="fas fa-thumbs-up"></i>
+                    <span class="count">24</span>
+                  </button>
+                  <button class="icon-btn" aria-label="Не полезно">
+                    <i class="fas fa-thumbs-down"></i>
+                    <span class="count">2</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="comments-section collapsed">
+                <p class="comments-title">Комментарии (0)</p>
+                
+                <div class="comments-content">
+                  <form class="comment-form">
+                    <textarea placeholder="Написать комментарий..." rows="4" required></textarea>
+                    <div class="comment-form-actions">
+                      <button type="submit" class="btn">Отправить</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <header class="review-head">
+              <h2 class="review-title">Cyberpunk 2077 — после патчей это другая игра</h2>
+              <div class="review-meta">
+                <span class="badge">Cyberpunk 2077</span>
+                <span class="year-badge">Рейтинг: 8.5/10</span>
+                <span class="muted">от nightcity · 10.09.2025</span>
+              </div>
+            </header>
+            <div class="review-content">
+              <div class="review-text-wrapper">
+                <p class="review-text">Город живёт, стрельба стала яснее, билды — интереснее. История Вика и Джуди тянет на отдельный сериал. Благодаря переработке перков и полиции город стал чувствоваться честнее. Есть шероховатости, но теперь рекомендую.</p>
+                <button class="read-more">Читать полностью</button>
+              </div>
+              
+              <div class="review-actions">
+                <div class="vote">
+                  <button class="icon-btn" aria-label="Полезно">
+                    <i class="fas fa-thumbs-up"></i>
+                    <span class="count">24</span>
+                  </button>
+                  <button class="icon-btn" aria-label="Не полезно">
+                    <i class="fas fa-thumbs-down"></i>
+                    <span class="count">2</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="comments-section collapsed">
+                <p class="comments-title">Комментарии (1)</p>
+                
+                <div class="comments-content">
+                  <div class="comments-list">
+                    <div class="comment">
+                      <div class="comment-header">
+                        <strong class="comment-author">ПРИШЕЛЕЦ-ГО26129</strong>
+                        <span class="comment-date">2 октября 2025 г. 19:59</span>
+                      </div>
+                      <p class="comment-text">Полностью согласен</p>
+                      <div class="comment-actions">
+                        <button class="comment-vote-btn" data-vote="like" aria-label="Полезно">
+                          <i class="fas fa-thumbs-up"></i>
+                          <span class="count">3</span>
+                        </button>
+                        <button class="comment-vote-btn" data-vote="dislike" aria-label="Не полезно">
+                          <i class="fas fa-thumbs-down"></i>
+                          <span class="count">0</span>
+                        </button>
+                        <button class="reply-btn">Ответить</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <form class="comment-form">
+                    <textarea placeholder="Написать комментарий..." rows="4" required></textarea>
+                    <div class="comment-form-actions">
+                      <button type="submit" class="btn">Отправить</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </article>
+          
+          <article class="review-card">
+            <header class="review-head">
+              <h2 class="review-title">Baldur's Gate 3 — свобода решений и тактическая глубина</h2>
+              <div class="review-meta">
+                <span class="badge">Baldur's Gate 3</span>
+                <span class="year-badge">Рейтинг: 9.4/10</span>
+                <span class="muted">от tavernmaster · 08.09.2024</span>
+              </div>
+            </header>
+            <div class="review-content">
+              <div class="review-text-wrapper">
+                <p class="review-text">BG3 впечатляет тем, насколько система реагирует на выборы. Практически в каждом квесте есть несколько путей решения, и игра поощряет экспериментировать: убеждение, скрытность, магия, комбинации умений и взаимодействие с окружением. Даже провалы бросков создают истории. Персонажи запоминающиеся, с глубокими личными арками, а боевая система предлагает невероятную тактическую глубину. Музыка и визуальное исполнение на высшем уровне, создавая неповторимую атмосферу Фаэруна.</p>
+                <button class="read-more">Читать полностью</button>
+              </div>
+              
+              <div class="review-actions">
+                <div class="vote">
+                  <button class="icon-btn" aria-label="Полезно">
+                    <i class="fas fa-thumbs-up"></i>
+                    <span class="count">24</span>
+                  </button>
+                  <button class="icon-btn" aria-label="Не полезно">
+                    <i class="fas fa-thumbs-down"></i>
+                    <span class="count">2</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="comments-section collapsed">
+                <p class="comments-title">Комментарии (0)</p>
+                
+                <div class="comments-content">
+                  <form class="comment-form">
+                    <textarea placeholder="Написать комментарий..." rows="4" required></textarea>
+                    <div class="comment-form-actions">
+                      <button type="submit" class="btn">Отправить</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Пагинация -->
+      <nav class="pagination" aria-label="Пагинация" style="margin-top:16px;">
+        <p class="muted">Показано 1–20 из 532 обзоров</p>
+        <div class="pager">
+          <a href="#" aria-label="Предыдущая страница" class="btn secondary">Назад</a>
+          <a href="#" aria-current="page" class="btn">1</a>
+          <a href="#" class="btn secondary">2</a>
+          <a href="#" class="btn secondary">3</a>
+          <span class="muted">…</span>
+          <a href="#" class="btn secondary">Следующая</a>
+        </div>
+      </nav>
+    </main>
+  </div>
+
+  <site-footer base="../"></site-footer>
+  <script src="../js/components.js" defer></script>
+  <script src="../js/reviews.js" defer></script>
+</body>
+
+</html>
